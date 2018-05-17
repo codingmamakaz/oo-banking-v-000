@@ -20,7 +20,7 @@ class BankAccount
 
   def valid?
 
-    if name.@status = "open" && name.@balance > 0
+    if @status.name = "open" && @balance.name > 0
       true
     else
       false
