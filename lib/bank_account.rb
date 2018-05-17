@@ -11,4 +11,8 @@ class BankAccount
   def deposit(int)
     @balance = @balance + int
   end
+
+  def display_balance
+    "Your balance is $#{@balance}."
+  end
 end
