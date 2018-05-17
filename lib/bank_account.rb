@@ -18,18 +18,13 @@ class BankAccount
     "Your balance is $#{@balance}."
   end
 
-  def BankAccount.valid?
-    if @status = "closed" || @balance = 0
-      false
+  def valid?
+  
+    if @status = "open" && @balance > 0
+      self.valid? = true
     else
-      true
+      self.valid? = false
     end
-
-    # if @status = "closed" || @balance = 0
-    #   false
-    # elsif @status = "open" && @balance > 0
-    #   true
-    # end
   end
 
 end
